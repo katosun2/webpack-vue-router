@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "webpack --progress --hide-modules --config build/webpack.prod.conf.js"
+    "build": "webpack -p --progress --hide-modules --config build/webpack.prod.conf.js"
   },
   "repository": {
     "type": "git",
