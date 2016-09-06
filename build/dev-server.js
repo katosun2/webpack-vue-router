@@ -35,3 +35,20 @@ app.listen(8000, '127.0.0.1', function(err) {
   }
   console.log('Listening at http://127.0.0.1:8000');
 });
+
+/*watch options:*/
+compiler.watch({
+	aggregateTimeout: 300,
+	poll: 1000
+},
+function(err, stats) {
+	if (err) {
+		throw err;
+	}
+
+	console.log(stats.toString({
+		children: false,
+		chunks: false,
+		colors: true
+	}));
+});
