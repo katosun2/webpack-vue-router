@@ -27,6 +27,6 @@
 
 #### 使用
 
-``npm run dev`` 开发模式
+``npm start`` 开发模式
 
 ``npm run build`` 打包项目
